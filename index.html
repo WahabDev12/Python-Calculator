@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="background">
+        <div class="container" >
+            <h2 class=" text-dark text-center">Password Generator</h2>
+            <br>
+            <form action="/generate" method="POST" class="form-group">
+                <label>Password Length</label>
+                 <input required autofocus name="length" class="form-control" type="text" name="fst">
+                 <br>                
+                 
+            <button id="gen" class="form-control btn btn-success"><a href="#"></a>GENERATE</button>
+            <br>
+            <div class="display"name="result"><h4 id="text">{{ result }}</h4>
+                
+            </div>
+            <br>
+                <button id="copy" class=" btn-2 btn-danger form-control">Copy</button>
+            <br>
+            
+            </form>
+          <!---- <small class="footer">Copyright &copy; Group 7</small>-->
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='main.js')}}"></script>
+</body>
+</html>

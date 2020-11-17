@@ -4,9 +4,9 @@
 
 -- pip install flask --
 
-⭐Run this command un your terminal⭐
+⭐Run this command on your terminal⭐
 
-⭐Create two folders named:⭐
+⭐Create two folders⭐
 1.templates 2. static
 
 ✔Move --index.html-- to templates 
